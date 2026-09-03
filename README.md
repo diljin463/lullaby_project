@@ -57,7 +57,7 @@ cd useless_project_temp
 # Install dependencies
 pip install opencv-python mediapipe pygame flask numpy
 
-# Run
+Run
 
 ```bash
 python lullaby_driver.py
