@@ -49,6 +49,7 @@ For Software:
 For Software:
 
 # Installation
+
 ```bash
 # Clone repository
 git clone [https://github.com/tinkerhub/useless_project_temp.git](https://github.com/tinkerhub/useless_project_temp.git)
@@ -59,7 +60,6 @@ pip install opencv-python mediapipe pygame flask numpy
 
 Run
 
-```bash
 python lullaby_driver.py
 
 Project Documentation
