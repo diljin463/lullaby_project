@@ -58,20 +58,32 @@ cd useless_project_temp
 # Install dependencies
 pip install opencv-python mediapipe pygame flask numpy
 
-Run
+# Run
 
+```bash
 python lullaby_driver.py
+```
 
-Project Documentation
+---
+
+### Project Documentation
+
 For Software:
 
-Screenshots (Add at least 3)
-![Awake Mode](screenshots/awake_mode.png)
-![Drowsy Mode](screenshots/drowsy_mode.png)
-![Asleep Mode](screenshots/asleep_mode.png)
+#### Screenshots (Add at least 3)
 
-Diagram
+![Awake Mode](screenshots/awake_mode.png)  
+*Awake Mode: System monitoring Eye Aspect Ratio.*
 
+![Drowsy Mode](screenshots/drowsy_mode.png)  
+*Drowsy Mode: Bedtime readiness progression meter fills as driver's eyelids drop.*
+
+![Asleep Mode](screenshots/asleep_mode.png)  
+*Asleep Mode: Red alert active, displaying sleep status while playing lullaby.*
+
+#### Diagram
+
+```text
 +-------------------------------------------------------+
 |                     1. VIDEO INPUT                    |
 |          Webcam Feed  --->  OpenCV Processing         |
@@ -104,22 +116,23 @@ Diagram
 |                 4. COCKPIT DASHBOARD                  |
 |  Flask Web HUD Displays Live Video, Speed & Telemetry  |
 +-------------------------------------------------------+
+```
 
-Workflow Diagram: Real-time webcam frames are tracked via MediaPipe to compute EAR. Sustained eye closure for 25+ frames triggers Pygame to loop Gayatri's lullaby while Flask syncs telemetry to the dashboard.
+---
 
-Project Demo
+### Project Demo
 
-Video
-[demo video](https://drive.google.com/drive/folders/1tsZ3gp4DUhpuywFt8xbdOVtN_1ptgut6?usp=drive_link)
+#### Video
 
-Video demonstrates live webcam eye-tracking, the drowsiness threshold trigger, the Chaanjadi Aadi audio loop, and cockpit HUD telemetry.
+[Watch Demo Video on Google Drive](https://drive.google.com/drive/folders/1tsZ3gp4DUhpuywFt8xbdOVtN_1ptgut6?usp=sharing)  
+*Video demonstrates live webcam eye-tracking, the drowsiness threshold trigger, the Chaanjadi Aadi audio loop, and cockpit HUD telemetry.*
 
+---
 
-Team Contributions
-Diljin C James: Computer vision pipeline (MediaPipe & OpenCV), EAR drowsiness math logic, Flask video streaming server, and Pygame audio integration.
+### Team Contributions
 
-[Ayvin Abraham]: Cockpit UI design, Tailwind CSS glassmorphic layout, sarcastic copy generation, and theme switcher logic.
+- **Diljin C James:** Computer vision pipeline (MediaPipe & OpenCV), EAR drowsiness math logic, Flask video streaming server, and Pygame audio integration.
+- **Ayvin Abraham:** Cockpit UI design, Tailwind CSS glassmorphic layout, sarcastic copy generation, and theme switcher logic.
 
-
-
+---
 Made with ❤️ at TinkerHub
